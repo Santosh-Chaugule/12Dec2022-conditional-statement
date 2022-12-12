@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Lecture 58- JS Conditional Statements - IF,ELSE,ELSEIF and Switch
+      Statement Day 2
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* this is for CSS */
+      #box2 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+      }
+    </style>
+    <script>
+      // this is for JS
+    </script>
+  </head>
+  <body>
+    <!-- you can write here HTML code  -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div
+      id="box3"
+      style="width: 100px; height: 100px; background-color: blue"
+    ></div>
+
+    <script>
+      // this space belongs to JS code
+
+      //   there are three kind of boxes in JS
+      // 1 Alert Box window.alert() or alert()
+      // 2 Prompt Box window.prompt()
+      //3 window.confirm() are you 18+? (Input are rexcived as a boolean value i.e true/false)
+      var time = window.prompt("Please enter the time");
+      //   alert("Before Type Conversion " + typeof time);
+
+      time = parseInt(time);
+
+      //   alert("After Type Conversion " + typeof time);
+
+      if (time >= 6 && time <= 12) {
+        window.alert("Good Morning");
+      } else if (time > 12 && time <= 15) {
+        alert("Good Afternoon");
+      } else if (time > 13 && time <= 20) {
+        alert("Good Evening");
+      } else {
+        window.alert("Good night");
+      }
+
+      //this is related the confirm box
+      var x = window.confirm("Are you 18+?");
+      alert(typeof x);
+      if (x === true) {
+        window.alert("You can Vote");
+      } else {
+        window.alert("You can't vate");
+      }
+      //L=R  R----->L associativity of the operator.
+      //input as recived as the string
+      //How to check the data type of operator? typeof()
+      //You have to convert string to number
+      //"10"--->10 (This is called Type conversion) parseInt()is function use for this conversion Operation.
+    </script>
+  </body>
+</html>
